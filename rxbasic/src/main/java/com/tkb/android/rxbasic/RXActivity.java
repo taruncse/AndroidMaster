@@ -9,7 +9,7 @@ import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
-
+//https://www.androidhive.info/RxJava/android-getting-started-with-reactive-programming/
 public class RXActivity extends AppCompatActivity {
 
     Disposable disposable;
@@ -18,7 +18,7 @@ public class RXActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_rx);
+        setContentView(R.layout.activity_rx);
 
         Observable<String> animalObservable = ObservableProvider.getAnimalsObservable();
         Observer<String> animalObserver = getAnimalObserver();
