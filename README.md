@@ -8,4 +8,6 @@
 6. Navigation Drawer
 7. Camera Library
 8. Build Variant 
+9. Android architectural component
+10. Design patterns
 
