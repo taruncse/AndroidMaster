@@ -13,4 +13,5 @@
   b) MVVM
 10. Design patterns
 11. Firebase
+12. EventBus
 
