@@ -14,4 +14,5 @@
 10. Design patterns
 11. Firebase
 12. EventBus
+13. RXAndroid (https://blog.angularindepth.com/learn-to-combine-rxjs-sequences-with-super-intuitive-interactive-diagrams-20fce8e6511)
 
