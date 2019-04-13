@@ -14,6 +14,7 @@ public class PrefActivity extends AppCompatActivity {
 
     @AfterViews
     protected void afterView() {
+        myPrefs.age().get();
 
     }
 }
