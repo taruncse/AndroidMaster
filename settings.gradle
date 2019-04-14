@@ -1,1 +1,1 @@
-include ':app', ':biometricauthentication', ':rxbasic', ':androidannotation'
+include ':app', ':biometricauthentication', ':rxbasic', ':androidannotation', ':design'
