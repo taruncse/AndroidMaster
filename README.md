@@ -17,4 +17,5 @@
 13. RXAndroid (https://blog.angularindepth.com/learn-to-combine-rxjs-sequences-with-super-intuitive-interactive-diagrams-20fce8e6511)
 14. Glide
 15. Retrofit (POST,GET,PUT,UPDATE)
+16. Toasty
 
