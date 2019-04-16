@@ -55,4 +55,8 @@ dependencies {
 
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
     implementation "org.androidannotations:androidannotations-api:$AAVersion"
+
+    //For Toast message
+    //implementation 'com.github.GrenderG:Toasty:1.4.2'
+
 }
