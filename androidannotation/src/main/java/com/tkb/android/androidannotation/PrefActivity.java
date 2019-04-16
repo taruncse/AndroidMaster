@@ -6,6 +6,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import es.dmoral.toasty.Toasty;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
@@ -31,11 +32,11 @@ public class PrefActivity extends AppCompatActivity {
     @Click
     void btnSave(){
         if (edtTextName.getText().toString().isEmpty()){
-            Toast.makeText(this,"Error",Toast.LENGTH_LONG).show();
+            Toasty.error(this, "Please enter your name", Toast.LENGTH_SHORT, true).show();
+
         }else {
             myPrefs.name().put(edtTextName.getText().toString());
             txtShowName.setText(myPrefs.name().get()+"");
-
         }
     }
     @AfterViews

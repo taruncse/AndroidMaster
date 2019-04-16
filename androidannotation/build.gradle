@@ -58,5 +58,6 @@ dependencies {
 
     //For Toast message
     //implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
 
 }
