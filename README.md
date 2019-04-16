@@ -18,4 +18,6 @@
 14. Glide
 15. Retrofit (POST,GET,PUT,UPDATE)
 16. Toasty
+17. Facebook api
+18. Google Map api
 
