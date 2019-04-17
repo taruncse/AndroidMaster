@@ -32,4 +32,53 @@ project.ext {
     minSdkVersion = 23
     targetSdkVersion = 28
     supportVersion = "27.1.1"
+
+    constantLayoutVersion = "1.1.3"
+    apcompactVersion = "1.1.0-alpha03"
+}
+
+
+// Following gradle code is for all the sub projects which is added in settings.gradle file
+// They will use this common file
+subprojects {
+// within this closure the implicit “it” refers to
+// the sub-project, and acts as the default receiver.
+    apply plugin: 'com.android.application'
+    android {
+        compileSdkVersion 28
+        defaultConfig {
+            applicationId "com.tkb.android.master"
+            minSdkVersion 23
+            targetSdkVersion 28
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+        implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+        testImplementation 'junit:junit:4.12'
+        androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
+        androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
+
+
+        implementation 'com.google.android.material:material:1.1.0-alpha05'
+        // RxJava
+        implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+        // RxAndroid
+        implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+        implementation  'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+
+        implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+        //Biometric auth
+        implementation 'com.jakewharton:butterknife:10.1.0'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+        implementation 'com.jakewharton.rxbinding3:rxbinding:3.0.0-alpha2'
+
+        implementation 'com.squareup.whorlwind:whorlwind:2.0.0'
+        implementation 'com.mattprecious.swirl:swirl:1.2.0'
+    }
 }
