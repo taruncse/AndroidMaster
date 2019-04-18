@@ -30,6 +30,7 @@ public class DaggerActivity extends AppCompatActivity {
 
         CarComponent carComponent = DaggerCarComponent.create();
         carComponent.inject(this);
+        car.driveCar();
         Toasty.normal(this,car.driveCar()).show();
 
     }

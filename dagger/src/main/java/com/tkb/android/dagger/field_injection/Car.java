@@ -4,16 +4,25 @@ import javax.inject.Inject;
 
 public class Car {
     public static String TAG = Car.class.getSimpleName();
-    private final Engine engine;
+    @Inject
+    Engine engine;
     private final Wheels wheels;
 
     @Inject
-    public Car (Engine engine, Wheels wheels){
-        this.engine = engine;
+    public Car ( Wheels wheels){
         this.wheels = wheels;
     }
 
     public String driveCar(){
         return "Driving...";
     }
+
+    ///Method injection
+    // Constructor injection first inject constructor , then field and thirdly Methods.. That's why
+    // enableRemote method doesn't need any call
+    @Inject
+    public void enableRemote(Remote remote){
+        remote.setListener(this);
+    }
+
 }

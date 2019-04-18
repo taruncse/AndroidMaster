@@ -1,5 +1,7 @@
 package com.tkb.android.dagger.constraction_injection;
 
+import com.tkb.android.dagger.field_injection.Remote;
+
 import javax.inject.Inject;
 
 public class Car {
