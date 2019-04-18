@@ -29,7 +29,7 @@ task clean(type: Delete) {
 project.ext {
     compileSdkVersion = 28
     buildToolsVersion = "27.0.3"
-    minSdkVersion = 23
+    minSdkVersion = 24
     targetSdkVersion = 28
     supportVersion = "27.1.1"
 
@@ -48,13 +48,18 @@ subprojects {
         compileSdkVersion 28
         defaultConfig {
             applicationId "com.tkb.android.master"
-            minSdkVersion 23
+            minSdkVersion 24
             targetSdkVersion 28
             versionCode 1
             versionName "1.0"
         }
-    }
 
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+    def AAVersion = "4.5.2"
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
         implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
@@ -80,5 +85,18 @@ subprojects {
 
         implementation 'com.squareup.whorlwind:whorlwind:2.0.0'
         implementation 'com.mattprecious.swirl:swirl:1.2.0'
+
+        //For Dagger2
+        implementation 'com.google.dagger:dagger:2.22.1'
+        annotationProcessor 'com.google.dagger:dagger-compiler:2.22.1'
+
+
+        //Android Annotation
+
+        annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+        implementation "org.androidannotations:androidannotations-api:$AAVersion"
+
+        //For Toast message
+        implementation 'com.github.GrenderG:Toasty:1.4.2'
     }
 }
