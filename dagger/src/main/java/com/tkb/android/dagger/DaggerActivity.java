@@ -2,9 +2,10 @@ package com.tkb.android.dagger;
 
 import android.os.Bundle;
 
-import com.tkb.android.dagger.field_injection.Car;
-import com.tkb.android.dagger.field_injection.CarComponent;
-import com.tkb.android.dagger.field_injection.DaggerCarComponent;
+
+import com.tkb.android.dagger.field_injection.CarF;
+import com.tkb.android.dagger.field_injection.CarFComponent;
+import com.tkb.android.dagger.field_injection.DaggerCarFComponent;
 
 import javax.inject.Inject;
 
@@ -15,7 +16,7 @@ import es.dmoral.toasty.Toasty;
 public class DaggerActivity extends AppCompatActivity {
 
     @Inject
-    Car car;
+    CarF car;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,7 @@ public class DaggerActivity extends AppCompatActivity {
 
         //Field Injection
 
-        CarComponent carComponent = DaggerCarComponent.create();
+        CarFComponent carComponent = DaggerCarFComponent.create();
         carComponent.inject(this);
         car.driveCar();
         Toasty.normal(this,car.driveCar()).show();

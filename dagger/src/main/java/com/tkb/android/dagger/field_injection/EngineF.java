@@ -2,9 +2,9 @@ package com.tkb.android.dagger.field_injection;
 
 import javax.inject.Inject;
 
-public class Wheels {
+public class EngineF {
     @Inject
-    public Wheels(){
+    public EngineF(){
 
     }
 }

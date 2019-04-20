@@ -7,6 +7,6 @@ import javax.inject.Inject;
 import dagger.Component;
 
 @Component
-public interface CarComponent {
+public interface CarFComponent {
     void inject (DaggerActivity daggerActivity);
 }

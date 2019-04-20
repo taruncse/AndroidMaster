@@ -2,14 +2,14 @@ package com.tkb.android.dagger.field_injection;
 
 import javax.inject.Inject;
 
-public class Car {
-    public static String TAG = Car.class.getSimpleName();
+public class CarF {
+    public static String TAG = CarF.class.getSimpleName();
     @Inject
-    Engine engine;
-    private final Wheels wheels;
+    EngineF engine;
+    private final WheelsF wheels;
 
     @Inject
-    public Car ( Wheels wheels){
+    public CarF ( WheelsF wheels){
         this.wheels = wheels;
     }
 
