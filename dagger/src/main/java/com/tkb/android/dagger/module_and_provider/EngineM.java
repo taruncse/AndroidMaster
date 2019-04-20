@@ -2,11 +2,9 @@ package com.tkb.android.dagger.module_and_provider;
 
 import javax.inject.Inject;
 
-public class StudentBasicInformations {
-
+public class EngineM {
     @Inject
-    public StudentBasicInformations (){
+    public EngineM(){
 
     }
-
 }
