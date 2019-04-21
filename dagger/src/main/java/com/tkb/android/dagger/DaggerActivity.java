@@ -3,14 +3,17 @@ package com.tkb.android.dagger;
 import android.os.Bundle;
 
 
-import com.tkb.android.dagger.module_and_provider.CarMComponent;
-import com.tkb.android.dagger.module_and_provider.DaggerCarMComponent;
+import com.tkb.android.dagger.interface_injection.CarIComponent;
+import com.tkb.android.dagger.interface_injection.DaggerCarIComponent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 
 public class DaggerActivity extends AppCompatActivity {
 
+    /** To inject the following object in Activity, we need to pass this activity to component class.
+     *  Activity passing to the component 'carFComponent.inject(this);'
+     */
    /* @Inject
     CarF car;*/
     @Override
@@ -32,9 +35,9 @@ public class DaggerActivity extends AppCompatActivity {
 
 
        //Module and provider
-        CarMComponent carFComponent = DaggerCarMComponent.create();
-        carFComponent.inject(this);
-        carFComponent.getCar().driveCar();
+        CarIComponent carIComponent = DaggerCarIComponent.create();
+        carIComponent.inject(this);
+        carIComponent.getCar().driveCar();
 
     }
 }
