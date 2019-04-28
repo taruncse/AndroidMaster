@@ -99,8 +99,8 @@ subprojects {
         //For Toast message
         implementation 'com.github.GrenderG:Toasty:1.4.2'
 
-        //Material dialogs
-        implementation 'com.afollestad.material-dialogs:core:2.8.1'
+        // dialogs
+        implementation 'com.yarolegovich:lovely-dialog:1.1.0'
 
     }
 }

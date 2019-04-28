@@ -6,13 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".MaterialDialog">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnStandar"
+        android:layout_width="307dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/stander"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/info"
+        app:layout_constraintEnd_toEndOf="@+id/btnStandar"
+        app:layout_constraintStart_toStartOf="@+id/btnStandar"
+        app:layout_constraintTop_toBottomOf="@+id/btnStandar" />
+
+    <Button
+        android:id="@+id/btnInput"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_input"
+        app:layout_constraintEnd_toEndOf="@+id/btnInfo"
+        app:layout_constraintStart_toStartOf="@+id/btnInfo"
+        app:layout_constraintTop_toBottomOf="@+id/btnInfo" />
+
+    <Button
+        android:id="@+id/btnChoice"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/choice"
+        app:layout_constraintEnd_toEndOf="@+id/btnInput"
+        app:layout_constraintStart_toStartOf="@+id/btnInput"
+        app:layout_constraintTop_toBottomOf="@+id/btnInput" />
+
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/progress"
+        app:layout_constraintEnd_toEndOf="@+id/btnChoice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnChoice"
+        app:layout_constraintTop_toBottomOf="@+id/btnChoice" />
+
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/custome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnProgress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnProgress"
+        app:layout_constraintTop_toBottomOf="@+id/btnProgress"
+        app:layout_constraintVertical_bias="0.073" />
 </androidx.constraintlayout.widget.ConstraintLayout>
