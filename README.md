@@ -20,4 +20,5 @@
 16. Toasty
 17. Facebook api
 18. Google Map api
+19. Dialog (https://github.com/yarolegovich/LovelyDialog)
 
